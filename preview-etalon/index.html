@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Gaming Services Marketplace</title>
   <link rel="stylesheet" href="styles-1.css">
-<link rel="stylesheet" href="styles-2.css">
-<link rel="stylesheet" href="styles-3.css">
+  <link rel="stylesheet" href="styles-2.css">
+  <link rel="stylesheet" href="styles-3.css">
   <link rel="stylesheet" href="assets-a.css">
   <link rel="stylesheet" href="assets-b.css">
   <link rel="stylesheet" href="assets-c.css">
@@ -23,33 +23,33 @@
 <div class="page-shell">
   <div class="lace lace-left"></div><div class="lace lace-right"></div>
   <header class="topbar">
-    <a class="brand" href="#" aria-label="Gaming Services Marketplace"><span class="atlas-slice atlas-logo" aria-hidden="true"></span></a>
+    <button class="brand route-control" type="button" data-route="home" aria-label="Gaming Services Marketplace"><span class="atlas-slice atlas-logo" aria-hidden="true"></span></button>
     <nav class="topnav" aria-label="Главное меню">
-      <button class="topnav-item active"><span class="ico-sprite i-category-title"></span><span>Задания</span></button>
-      <button class="topnav-item"><span class="ico-sprite i-top-community"></span><span>Сообщество</span></button>
-      <button class="topnav-item"><span class="ico-sprite i-top-rating"></span><span>Рейтинг</span></button>
-      <button class="topnav-item partner"><span class="ico-sprite i-top-partner"></span><span>Стать партнёром</span></button>
-      <button class="topnav-item"><span class="ico-sprite i-top-help"></span><span>Помощь</span></button>
+      <button class="topnav-item active route-control" type="button" data-route="tasks"><span class="ico-sprite i-category-title"></span><span>Задания</span></button>
+      <button class="topnav-item route-control" type="button" data-route="community"><span class="ico-sprite i-top-community"></span><span>Сообщество</span></button>
+      <button class="topnav-item route-control" type="button" data-route="rating"><span class="ico-sprite i-top-rating"></span><span>Рейтинг</span></button>
+      <button class="topnav-item partner route-control" type="button" data-route="partner"><span class="ico-sprite i-top-partner"></span><span>Стать партнёром</span></button>
+      <button class="topnav-item route-control" type="button" data-route="help"><span class="ico-sprite i-top-help"></span><span>Помощь</span></button>
     </nav>
     <div class="top-actions">
-      <button class="header-icon"><span class="ico-sprite i-mail" aria-label="Сообщения"></span></button>
-      <button class="header-icon notify"><span class="ico-sprite i-bell" aria-label="Уведомления"></span></button>
-      <button class="profile-chip"><span class="atlas-slice atlas-profile" aria-hidden="true"></span><span>Shkiper</span><b>⌄</b></button>
+      <button class="header-icon route-control" type="button" data-route="messages" aria-label="Сообщения"><span class="ico-sprite i-mail"></span></button>
+      <button class="header-icon notify route-control" type="button" data-route="notifications" aria-label="Уведомления"><span class="ico-sprite i-bell"></span></button>
+      <button class="profile-chip route-control" type="button" data-route="profile"><span class="atlas-slice atlas-profile" aria-hidden="true"></span><span>Shkiper</span><b>⌄</b></button>
     </div>
   </header>
 
   <div class="layout">
     <aside class="left-col">
       <section class="welcome-exact"><span class="atlas-slice atlas-welcome" role="img" aria-label="Добро пожаловать, Shkiper"></span></section>
-      <nav class="side-menu ornate-panel">
-        <button data-section="Главная"><span class="ico-sprite i-home"></span><span>Главная</span></button>
-        <button class="active" data-section="Задания"><span class="ico-sprite i-tasks"></span><span>Задания</span></button>
-        <button data-section="Мои заказы"><span class="ico-sprite i-orders"></span><span>Мои заказы</span></button>
-        <button data-section="Сообщество"><span class="ico-sprite i-community"></span><span>Сообщество</span><em>3</em></button>
-        <button data-section="Профиль"><span class="ico-sprite i-profile"></span><span>Профиль</span></button>
-        <button data-section="Баланс"><span class="ico-sprite i-balance"></span><span>Баланс</span></button>
-        <button data-section="Избранное"><span class="ico-sprite i-favorite"></span><span>Избранное</span></button>
-        <button data-section="Настройки"><span class="ico-sprite i-settings"></span><span>Настройки</span></button>
+      <nav class="side-menu ornate-panel" aria-label="Личный кабинет">
+        <button class="route-control" type="button" data-route="home"><span class="ico-sprite i-home"></span><span>Главная</span></button>
+        <button class="active route-control" type="button" data-route="tasks"><span class="ico-sprite i-tasks"></span><span>Задания</span></button>
+        <button class="route-control" type="button" data-route="orders"><span class="ico-sprite i-orders"></span><span>Мои заказы</span></button>
+        <button class="route-control" type="button" data-route="messages"><span class="ico-sprite i-community"></span><span>Сообщество</span><em>3</em></button>
+        <button class="route-control" type="button" data-route="profile"><span class="ico-sprite i-profile"></span><span>Профиль</span></button>
+        <button class="route-control" type="button" data-route="balance"><span class="ico-sprite i-balance"></span><span>Баланс</span></button>
+        <button class="route-control" type="button" data-route="favorites"><span class="ico-sprite i-favorite"></span><span>Избранное</span></button>
+        <button class="route-control" type="button" data-route="settings"><span class="ico-sprite i-settings"></span><span>Настройки</span></button>
       </nav>
       <section class="promo-exact"><span class="atlas-slice atlas-promo-left" role="img" aria-label="Играй больше. Достигай большего. Вместе с нами!"></span></section>
     </aside>
@@ -58,46 +58,46 @@
       <section class="hero-exact"><span class="atlas-slice atlas-hero" role="img" aria-label="Задания и услуги"></span></section>
       <section class="toolbar rounded-panel">
         <div class="tabs">
-          <button class="tab active"><span class="ico-sprite i-category-title"></span>Все задания</button>
-          <button class="tab" data-mode="new">Новые</button>
-          <button class="tab" data-mode="popular">Популярные</button>
-          <button class="tab" data-mode="cheap">Сначала дешёвые</button>
-          <button class="tab" data-mode="expensive">Сначала дорогие</button>
+          <button class="tab active" type="button"><span class="ico-sprite i-category-title"></span>Все задания</button>
+          <button class="tab" type="button" data-mode="new">Новые</button>
+          <button class="tab" type="button" data-mode="popular">Популярные</button>
+          <button class="tab" type="button" data-mode="cheap">Сначала дешёвые</button>
+          <button class="tab" type="button" data-mode="expensive">Сначала дорогие</button>
         </div>
         <label class="searchbox"><span class="ico-sprite i-search"></span><input id="search" type="search" placeholder="Поиск по заданиям..."></label>
       </section>
       <section class="task-list" id="tasks"></section>
-      <nav class="pagination"><button>‹</button><button class="active">1</button><button>2</button><button>3</button><button>4</button><button>5</button><span>…</span><button>›</button></nav>
+      <nav class="pagination" aria-label="Страницы заданий"><button type="button" data-page="prev">‹</button><button class="active" type="button" data-page="1">1</button><button type="button" data-page="2">2</button><button type="button" data-page="3">3</button><button type="button" data-page="4">4</button><button type="button" data-page="5">5</button><span>…</span><button type="button" data-page="next">›</button></nav>
     </main>
 
     <aside class="right-col">
       <div class="hero-right"><span class="atlas-slice atlas-hero-right" aria-hidden="true"></span></div>
       <section class="right-panel ornate-panel categories">
         <h2><span class="ico-sprite i-category-title"></span>Категории</h2>
-        <button class="cat active" data-cat="all"><span class="ico-sprite i-category-all"></span><span>Все категории</span><b>124</b></button>
-        <button class="cat" data-cat="Прокачка"><span class="ico-sprite i-category-level"></span><span>Прокачка</span><b>32</b></button>
-        <button class="cat" data-cat="Фарм"><span class="ico-sprite i-category-farm"></span><span>Фарм</span><b>28</b></button>
-        <button class="cat" data-cat="Крафт"><span class="ico-sprite i-category-craft"></span><span>Крафт</span><b>18</b></button>
-        <button class="cat" data-cat="Ивенты"><span class="ico-sprite i-category-events"></span><span>Ивенты</span><b>14</b></button>
-        <button class="cat" data-cat="Помощь"><span class="ico-sprite i-category-help"></span><span>Помощь</span><b>12</b></button>
-        <button class="cat" data-cat="Услуги"><span class="ico-sprite i-category-services"></span><span>Услуги</span><b>10</b></button>
-        <button class="cat" data-cat="Другое"><span class="ico-sprite i-category-other"></span><span>Другое</span><b>10</b></button>
+        <button class="cat active" type="button" data-cat="all"><span class="ico-sprite i-category-all"></span><span>Все категории</span><b>124</b></button>
+        <button class="cat" type="button" data-cat="Прокачка"><span class="ico-sprite i-category-level"></span><span>Прокачка</span><b>32</b></button>
+        <button class="cat" type="button" data-cat="Фарм"><span class="ico-sprite i-category-farm"></span><span>Фарм</span><b>28</b></button>
+        <button class="cat" type="button" data-cat="Крафт"><span class="ico-sprite i-category-craft"></span><span>Крафт</span><b>18</b></button>
+        <button class="cat" type="button" data-cat="Ивенты"><span class="ico-sprite i-category-events"></span><span>Ивенты</span><b>14</b></button>
+        <button class="cat" type="button" data-cat="Помощь"><span class="ico-sprite i-category-help"></span><span>Помощь</span><b>12</b></button>
+        <button class="cat" type="button" data-cat="Услуги"><span class="ico-sprite i-category-services"></span><span>Услуги</span><b>10</b></button>
+        <button class="cat" type="button" data-cat="Другое"><span class="ico-sprite i-category-other"></span><span>Другое</span><b>10</b></button>
       </section>
       <section class="right-panel ornate-panel filters">
         <h2><span class="ico-sprite i-filter"></span>Фильтры</h2>
         <label>Уровень персонажа<select id="level"><option>Любой</option></select></label>
         <label>Цена</label>
         <div class="price-row"><span class="ico-sprite i-filter-price"></span><input id="minPrice" inputmode="numeric" placeholder="От"><span>–</span><input id="maxPrice" inputmode="numeric" placeholder="До"></div>
-        <div class="switch-row"><span>Только с отзывами</span><button class="switch" id="reviews" aria-pressed="false"><i></i></button></div>
-        <button class="reset" id="reset"><span class="ico-sprite i-refresh"></span>Сбросить фильтры</button>
+        <div class="switch-row"><span>Только с отзывами</span><button class="switch" type="button" id="reviews" aria-pressed="false"><i></i></button></div>
+        <button class="reset" type="button" id="reset"><span class="ico-sprite i-refresh"></span>Сбросить фильтры</button>
       </section>
       <section class="promo-exact right-promo"><span class="atlas-slice atlas-promo-right" role="img" aria-label="Надёжные игроки. Честные сделки. Реальный прогресс"></span></section>
     </aside>
   </div>
 
-  <footer class="footer"><span>© 2024 Gaming Services Marketplace. Все права защищены.</span><nav><a href="#">Пользовательское соглашение</a><i></i><a href="#">Политика конфиденциальности</a><i></i><a href="#">Правила сервиса</a></nav></footer>
+  <footer class="footer"><span>© 2024 Gaming Services Marketplace. Все права защищены.</span><nav><button class="footer-link route-control" type="button" data-route="terms">Пользовательское соглашение</button><i></i><button class="footer-link route-control" type="button" data-route="privacy">Политика конфиденциальности</button><i></i><button class="footer-link route-control" type="button" data-route="rules">Правила сервиса</button></nav></footer>
 </div>
 <div class="toast" id="toast"></div>
-<div class="modal" id="modal"><div class="modal-card"><button class="modal-x" id="modalClose">×</button><h2 id="modalTitle"></h2><p id="modalText"></p><button class="modal-primary" id="modalContact">Связаться с драйвером</button></div></div>
+<div class="modal" id="modal"><div class="modal-card"><button class="modal-x" type="button" id="modalClose">×</button><h2 id="modalTitle"></h2><p id="modalText"></p><button class="modal-primary" type="button" id="modalContact">Связаться с драйвером</button></div></div>
 <script src="app.js"></script>
 </body></html>
